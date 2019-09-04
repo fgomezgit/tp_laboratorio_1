@@ -5,22 +5,22 @@
  *      Author: fgomez
  */
 
-int suma (int num1, int num2)
+int suma (int num1, int num2) //devuelve el resultado de la suma
 {
 	int resultado;
 	resultado = num1 + num2;
 	return resultado;
 }
-int resta (int num1, int num2)
+int resta (int num1, int num2) //devuelve el resultado de la resta
 {
 	int resultado;
 	resultado = num1 - num2;
 	return resultado;
 }
-float division (int num1, int num2) // uso de float para usar decimales
+float division (int num1, int num2) // devuelve 0 si num 2 es 0, sino el resultado de la division con decimales
 {
 	float resultado;
-	if(num2 == 0) // si num2 es 0, sale de la funcion con 0, después se chuequea si es error
+	if(num2 == 0) // si num2 es 0, sale de la funcion con 0, despuÃ©s se chuequea si es error
     {
         return 0;
     }
@@ -30,13 +30,13 @@ float division (int num1, int num2) // uso de float para usar decimales
         return resultado;
     }
 }
-int multiplicacion (int num1, int num2)
+int multiplicacion (int num1, int num2) //devuelve el resultado de la multiplicacion
 {
 	int resultado;
 	resultado = num1 * num2;
 	return resultado;
 }
-unsigned long int factorial (int num) // unsigned long int no contienen negativos
+unsigned long int factorial (int num) // devuelve el factorial de un numero. unsigned long int no contienen negativos
 {
 	unsigned long int resultado;
 	if(num < 0)//si ingreso un numero negativo retorno 0 para identificar error
